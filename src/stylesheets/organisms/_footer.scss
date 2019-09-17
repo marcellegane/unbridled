@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.25em;
+
+  @media only screen and (min-height: 31.25em) and (min-width: 34.375em) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    margin-top: 0;
+    padding: rem(20) rem(40);
+  }
+
+  @include media($large-screen-up) {
+    font-size: em(20);
+  }
+}
