@@ -5,7 +5,7 @@ $ff-primary: 'Work Sans', sans-serif;
 $black: #000;
 $white: #FFF;
 $dark-green: #11242B;
-$body-text: $white;
+$body-text: #FCF2E7;
 
 // Layout
 $sp-l: rem(60);
@@ -17,3 +17,5 @@ $gtr-half  : $gtr / 2;
 $gtr-dbl   : $gtr * 2;
 $cols      : 12;
 $max-width : rem(1440);
+
+$ease-out-cubic: cubic-bezier(0.22, 0.61, 0.36, 1);

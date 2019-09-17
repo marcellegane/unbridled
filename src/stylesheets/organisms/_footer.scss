@@ -3,19 +3,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2.25em;
+  width: 100%;
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: rem(2) solid $body-text;
 
-  @media only screen and (min-height: 31.25em) and (min-width: 34.375em) {
+  @media only screen and (min-height: 39.375em) and (min-width: 34.375em) {
     position: absolute;
-    right: 0;
+    right: rem(40);
     bottom: 0;
-    left: 0;
+    left: rem(40);
     flex-direction: row;
+    width: auto;
     margin-top: 0;
-    padding: rem(20) rem(40);
+    padding: 2em 0;
   }
 
   @include media($large-screen-up) {
     font-size: em(20);
+  }
+}
+
+.footer__marque {
+  width: rem(30);
+  margin: rem(10);
+  background: {
+    image: url('../images/marque.svg');
+    repeat: no-repeat;
+    position: center;
+    size: contain;
+  }
+
+  @media only screen and ($small-screen-up) and ($medium-screen-down) {
+    display: none;
+  }
+
+  @media only screen and (min-height: 39.375em) and (min-width: 34.375em) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(40);
+    margin: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: percentage(36/40);
   }
 }
