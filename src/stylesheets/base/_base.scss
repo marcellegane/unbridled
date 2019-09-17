@@ -16,5 +16,5 @@ body {
   background-color: $dark-green;
 }
 
-::-moz-selection { background: red; }
-::selection { background: red; }
+::-moz-selection { background: rgba($white, 0.2); }
+::selection { background: rgba($white, 0.2); }
