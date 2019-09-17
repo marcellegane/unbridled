@@ -15,3 +15,6 @@ body {
   text-align: center;
   background-color: $dark-green;
 }
+
+::-moz-selection { background: red; }
+::selection { background: red; }
